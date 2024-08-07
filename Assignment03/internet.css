@@ -1,0 +1,72 @@
+/* import to internet.html */
+
+.header-format {
+    font-size: 30px;
+    font-family: "궁서체";
+    letter-spacing: 15px;
+}
+
+.span-blue_italic {
+    font-style: italic;
+    font-weight: bold;
+    color: #0000FF;
+}
+
+.span-red_italic{
+    font-style: italic;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.greenLetters {
+    text-decoration: underline;
+    color: #00FF00;
+}
+
+.span-greenLetters {
+    color: #00FF00;
+}
+
+.span-blueLetters_italic {
+    font-style: italic;
+    color: #0000FF;
+}
+
+.span-redLetters_italic {
+    font-style: italic;
+    color: #FF0000;
+}
+
+ol {list-style-type: none;}
+
+
+.backgroundcolor {
+    background-color: #D9D9D9;
+}
+
+.text_congif{
+    text-indent: 30px;
+}
+
+.text_config_underline{
+    text-decoration: underline;
+}
+
+ul {list-style-type:square;}
+
+.tableHeader_backgroundColor {
+    background-color: #C8EBFA;
+}
+
+tbody>tr:hover {background-color: #EDD3ED;}
+
+
+tbody>tr>td:last-child::before{content: "약 ";}
+tbody>tr>td:last-child::after{content: " (MB/초)";}
+
+tbody>tr>td:last-child{text-align: right;}
+
+a:hover{color: #0000FF; text-decoration: underline;}
+a:link{color:#FFFFFF; text-decoration: none;}
+a:visited{color: #FFFFFF;}
+a:active{color: #0000FF; text-decoration: underline;}
