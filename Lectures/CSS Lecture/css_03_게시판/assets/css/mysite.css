@@ -82,7 +82,8 @@ h1 {
     float:left;
     width: 20%;
     height: 400px;
-    margin-right: 10px
+    margin-right: 10px;
+    border: 1px solid bl
 }
 
 #aside h2{
@@ -145,7 +146,57 @@ h1 {
     content: "";
 }
 
-#contents2 #search{
+#contents2 #search {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 }
+
+#contents2 table{
+    width: 78.8%;
+    font-size: 12px;
+}
+
+#contents2 table th{
+    padding-block: 10px;
+    text-align: center;
+    background-color: lightgrey;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+
+#contents2 table td{
+    padding-block: 10px;
+    text-align: center;
+    border-bottom: 1.5px solid black;
+}
+
+#contents2 .pages ol {
+    width: 78.8%;
+    text-align: center; 
+    padding: 0;
+    margin-left: 200px;
+    list-style-type: none; 
+}
+
+#contents2 .pages ol>li {
+    display: inline-block; /* 리스트 아이템들을 한 줄로 배치 */
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+#contents2 .pages ol>li:nth-child(7) {
+    text-decoration: underline;
+}
+
+#btn{
+    float:right;
+}
+
+#btn #writebtn{
+    padding: 7px 7px;
+}
+
+
 
