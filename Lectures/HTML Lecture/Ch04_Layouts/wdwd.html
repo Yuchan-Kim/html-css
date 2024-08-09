@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반게시판</title>
+    <style>
+        body {
+            background-color: #808080;
+            font-family: "맑은 고딕";
+            font-size: 12px;
+        }
+        
+        .container {
+            width: 700px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb {
+            margin: 10px 0;
+        }
+
+        .breadcrumb span {
+            margin-right: 5px;
+        }
+
+        .breadcrumb span:last-child {
+            background-color: #FF8000;
+            color: white;
+            padding: 3px 5px;
+            border-radius: 3px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            width: 80px;
+        }
+
+        .form-group select,
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group textarea {
+            flex: 1;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-left: 10px;
+        }
+
+        .form-group input[type="radio"]:first-child,
+        .form-group input[type="checkbox"]:first-child {
+            margin-left: 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">일반게시판</div>
+        <div class="breadcrumb">
+            <span>홈</span> &gt; <span>게시판</span> &gt; <span>일반게시판</span> <span>맨 마지막에 적용</span>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="board-select">게시판 선택</label>
+                <select id="board-select">
+                    <option>선택해 주세요</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="title">제목</label>
+                <input type="text" id="title" placeholder="제목을 입력해 주세요">
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" placeholder="패스워드를 입력하세요">
+            </div>
+            <div class="form-group">
+                <label>공개범위</label>
+                <input type="radio" name="scope" value="본인"> 본인
+                <input type="radio" name="scope" value="로그인회원"> 로그인회원
+                <input type="radio" name="scope" value="친구"> 친구
+                <input type="radio" name="scope" value="전체" checked> 전체
+            </div>
+            <div class="form-group">
+                <label>허용범위</label>
+                <input type="checkbox" name="permissions" value="댓글허용" checked> 댓글허용
+                <input type="checkbox" name="permissions" value="답글허용"> 답글허용
+                <input type="checkbox" name="permissions" value="좋아요허용"> 좋아요허용
+            </div>
+            <div class="form-group">
+                <label for="attachment">첨부파일</label>
+                <input type="file" id="attachment">
+                <span>선택된 파일 없음</span>
+            </div>
+            <div class="buttons">
+                <button type="submit">등록</button>
+                <button type="reset">초기화</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol > li{
+            float: left;
+            list-style-type: none;
+            padding-inline: 10px;
+            margin: 8px 13px 8px 13px;
+        }
+
+        ol>li::after{
+            
+            content: ">";
+        }
+
+        ol>li:last-child::after{
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>홈</li>
+        <li>게시판</li>
+        <li>일반게시반</li>
+        <li>리스트</li>
+    </ol>
+</body>
+</html>

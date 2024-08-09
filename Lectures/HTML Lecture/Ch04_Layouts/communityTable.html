@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        @charset "UTF-8";
+
+    /* 기본 요소 초기화 */
+    body, div, p, dl, dt, ol, ul, li, h1, h2, h3, h4, h5, h6, form, input, select, textarea, button,
+    fieldset, legend,table, thead, tbody, tfoot, tr, th, td, header, footer, main, nav, section, article, aside {
+    margin: 0px;
+    padding: 0;
+    }
+
+        /* 기본 폼 요소 초기화 */
+    input, button, textarea, select {
+        font-family: inherit; /* 폰트 패밀리 상속 */
+        font-size: inherit; /* 폰트 사이즈 상속 */
+        color: inherit; /* 텍스트 색상 상속 */
+    }
+
+    ul>li, ol>li {
+        list-style-type: none;
+        float:left;
+    }
+
+    ol>li::after{
+        content : " >";
+    }
+
+    ol>li:last-child::after{
+        content: "";
+    }
+
+    /* clearfix */
+    /* .clearfix{*zoom:1;} */
+    .clearfix::before, .clearfix::after {
+        display: block; 
+        content: ""; 
+        line-height: 0;
+    }
+    .clearfix::after {clear: both;}
+
+    body{
+        background-color: #808080;
+    }
+
+    .form-group{
+        border-bottom: 1px solid black;
+        width: 600px;
+        background-color: white;
+    }
+
+    .form-group h1 {
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    
+    #txt_id, #txt_bloodtype, #txt_pw, #txt_hp, #txt_address, #txt_name, #txt_profile, #txt_age, #txt_blooedtype, #txt_hobby, #txt_selfIntro {
+        width: 100px;
+        height: 30px;
+        float: left;
+        text-align: center; 
+        margin-top: 15px;
+    }
+        
+
+
+    .form-group input,select,textarea {
+        font-size: 15px;
+        font-family: "맑은고딕";
+        margin-top: 11px;
+    }
+
+    .form-group textarea {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            height: 80px; 
+            width: 80%;
+        }
+
+    .form-group input[type="checkbox"] , input[type="radio"]{ 
+    margin-right: 10px;
+    margin-top: 15px;
+    vertical-align: middle;
+    }
+
+
+
+        
+
+
+    </style>
+<body>
+    <div class = "clearfix form-group">
+        <h1> 회원가입</h1>
+    <ol >
+        <li>홈</li>
+        <li>유저</li>
+        <li>회원가입</li>
+    </ol>
+    </div>
+    
+
+    <div class = "clearfix form-group">
+        <label id= "txt_id" for = "id" >아이디</label>
+        <input type="id" id="id" name ="" value = "" placeholder="아이디를 입력하세요." required>
+    </div>
+    
+    <div class = "clearfix form-group">
+        <label id= "txt_pw" for = "pw">비밀번호</label>
+        <input type="password" id="pw" name ="" value ="" placeholder="비밀번호를 입력하세요." required>
+    </div>
+    
+    <div class = "clearfix form-group">
+        <label id= "txt_name" for = "name">이름</label>
+        <input type="text" id="name" name ="" value ="" placeholder="비밀번호를 입력하세요." required>
+    </div>
+    
+    <div class = "clearfix form-group">
+        <label id= "txt_profile" for = "profilePic">프로필사진</label>
+        <input type ="file" id="profilePic" name ="" value ="">
+    </div>
+   
+    <div class = "clearfix form-group">
+        <label id= "txt_address" >주소 </label>
+        
+        <input type = "text" id = "addresses" name ="" value ="주소벨류"> 
+        <button id ="zipcode"  name ="" value ="우편번호찾기">
+            우편번호찾기
+        </button><br>
+        <input type = "text" id = "addressesDetail" name ="" value ="주소벨류"> 
+        
+    </div>
+    
+
+    <div class = "clearfix form-group">
+        <label id= "txt_hp" for = "hpCarrier">이동통신사</label>
+        <select id ="hpCarrier" name = "" value = "">
+            <option value ="Choices">선택하세요.</option>
+            <option value ="SKT">SKT</option>
+            <option value ="KT">KT</option>
+            <option value ="LGT">LGT</option>
+        </select>
+    </div>
+    
+
+    <div class = "clearfix form-group">
+        <label id= "txt_age" >나이</label>
+        <label for = "age10">10대</label>
+        <input type = "radio" id = "age10" name = "" value = "" checked>
+        <label for = "age20">20대</label>
+        <input type = "radio" id = "age20" name = "" value = "">
+        <label for = "age30">30대</label>
+        <input type = "radio" id = "age30" name = "" value = "">
+        <label for = "age40">40대</label>
+        <input type = "radio" id = "age40" name = "" value = "">
+        <label for = "etcAge">기타</label>
+        <input type = "radio" id = "etcAge" name = "" value = "">
+    </div>
+    
+
+    <div class = "clearfix form-group">
+        <label id= "txt_bloodtype" >혈액형</label>
+        <label for = "bloodTypeA">A형</label>
+        <input type = "radio" id = "bloodTypeA" name = "" value = "" checked>
+        <label for = "bloodTypeB">B형</label>
+        <input type = "radio" id = "bloodTypeB" name = "" value = "">
+        <label for = "bloodTypeO">O형</label>
+        <input type = "radio" id = "bloodTypeO" name = "" value = "">
+        <label for = "bloodTypeAB">AB형</label>
+        <input type = "radio" id = "bloodTypeAB" name = "" value = "">
+    </div>
+    
+
+    <div class = "clearfix form-group">
+        <label id= "txt_hobby" >취미</label>
+        <label for = "hobby01">독서</label>
+        <input type = "checkbox" id = "hobby1" name = "" value ="" checked>
+        <label for = "hobby02">요리</label>
+        <input type = "checkbox" id = "hobby2" name = "" value ="">
+        <label for = "hobby03">음악</label>
+        <input type = "checkbox" id = "hobby3" name = "" value ="">
+        <label for = "hobby04">여행</label>
+        <input type = "checkbox" id = "hobby4" name = "" value ="">
+        <label for = "hobby05">게임</label>
+        <input type = "checkbox" id = "hobby5" name = "" value ="">
+        <label for = "hobby06">기타</label>
+        <input type = "checkbox" id = "hobby6" name = "" value ="">
+    </div>
+    
+
+    <div class = "clearfix form-group">
+        <label id= "txt_selfIntro" >자기소개</label>
+        <textarea id = "selfIntroduction" name = "" value = ""></textarea>
+    </div>
+    
+
+</body>
+</html>
