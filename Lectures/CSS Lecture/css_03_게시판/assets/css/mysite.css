@@ -3,6 +3,7 @@
 #wrap{
     margin: 0px auto;
     width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -76,14 +77,16 @@ h1 {
 
 #contents2 {
     padding: 30px 20px;
+    overflow: hidden; /* Float 문제로 인해 부모 요소가 자식 요소를 포함하도록 */
 }
 
-#contents2 #aside{
-    float:left;
+#contents2 #aside {
+    float: left;
     width: 20%;
     height: 400px;
-    margin-right: 10px;
-    border: 1px solid bl
+    margin-right: 1.2%; /* 여백 조정 */
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 
 #aside h2{
@@ -106,12 +109,12 @@ h1 {
 
 }
 
-#contents2 #main{
-    float:left;
-    width: 78.8%;
+#contents2 #main {
+    float: left;
+    width: 78.8%; /* 이전에 정의된 값을 유지합니다. */
+    box-sizing: border-box;
     height: 47px;
     border-bottom: 1px solid lightgray;
-    
 }
 
 #contents2 #main h2{
