@@ -87,6 +87,7 @@ h1 {
     margin-right: 1.2%; /* 여백 조정 */
     box-sizing: border-box;
     border: 1px solid black;
+    overflow: hidden;
 }
 
 #aside h2{
@@ -115,6 +116,7 @@ h1 {
     box-sizing: border-box;
     height: 47px;
     border-bottom: 1px solid lightgray;
+    overflow: hidden;
 }
 
 #contents2 #main h2{
