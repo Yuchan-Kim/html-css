@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.container.row{
+    border: 5px solid black;
+    width: 500px;
+    height: 200px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container.col{
+    border: 5px solid black;
+    width: 500px;
+    height: 200px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.container_1{
+    border: 3px solid red;
+    margin-bottom: 5px;
+    
+}
+.container_2{
+    border: 3px solid blue;
+    margin-bottom: 5px;
+
+}
+.container_3{
+    border: 3px solid green;
+    margin-bottom: 5px;
+}
+

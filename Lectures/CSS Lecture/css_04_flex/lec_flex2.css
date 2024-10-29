@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.container.row{
+    border: 5px solid black;
+    width: 500px;
+    height: 200px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center; /* 틀의 위치를 변경 */
+    align-items: center; /* 틀 안에서 아이템의 위치를 변경하는데 틀의 크기도 같이 변경 */
+}
+
+.container.col{
+    border: 5px solid black;
+    width: 500px;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    
+
+}
+
+.container_1{
+    border: 3px solid red;
+    
+}
+.container_2{
+    border: 3px solid blue;
+
+}
+.container_3{
+    border: 3px solid green;
+}
+
